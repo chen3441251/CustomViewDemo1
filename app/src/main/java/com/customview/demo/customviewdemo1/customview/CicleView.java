@@ -51,6 +51,7 @@ public class CicleView extends View {
             heightSize = (int) (mRadius * 2 + getPaddingBottom() + getPaddingTop());
         }
         setMeasuredDimension(widthSize, heightSize);
+        Log.d("xxx","onMeasure");
     }
 
     @Override

@@ -9,9 +9,34 @@
 
     <com.customview.demo.customviewdemo1.customview.CicleView
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:padding="25dp"
         android:background="@color/colorAccent"
-        android:layout_height="wrap_content"/>
+        android:padding="25dp"
+        android:visibility="gone"/>
 
+    <com.customview.demo.customviewdemo1.customview.VerticalLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#ff00"
+            android:text="第一个子view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00ff00"
+            android:text="第二个子view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="#0000ff"
+            android:text="第三个子view"/>
+    </com.customview.demo.customviewdemo1.customview.VerticalLayout>
 </LinearLayout>
