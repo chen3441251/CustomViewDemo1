@@ -76,8 +76,8 @@ public class VerticalLayout extends ViewGroup {
             height += paddingBottom + paddingTop;
         }
         //设置viewGroup的宽高
-        setMeasuredDimension(widthMode == MeasureSpec.AT_MOST ? width : widthMeasureSpec,
-                heightMode == MeasureSpec.AT_MOST ? height : heightMeasureSpec);
+        setMeasuredDimension(widthMode == MeasureSpec.AT_MOST ? width : widthSize,
+                heightMode == MeasureSpec.AT_MOST ? height : heightSize);
     }
 
     @Override
@@ -104,7 +104,7 @@ public class VerticalLayout extends ViewGroup {
                 childLeft = lp.leftMargin;
                 childRight = childAt.getMeasuredWidth() + lp.leftMargin;
                 //计算一个测量一个
-                childAt.layout(childLeft + paddingLeft, childTop + paddingTop + bm, childRight + paddingRight, childBottom + paddingBottom + bm);
+                childAt.layout(childLeft + paddingLeft, childTop + paddingTop + bm, childRight + paddingRight, childBottom + paddingTop + bm);
                 //计算下一个之前需要加上bottom(摆放第二个子view的时候才需要吧bottomMargin计算进去)
                 bm += lp.bottomMargin;
                 childTop += childAt.getMeasuredHeight();

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomFramLayout">
+        <attr name="item_leftText" format="string" />
+        <attr name="item_leftImag" format="reference" />
+        <attr name="item_rightText" format="string" />
+        <attr name="item_rightImag" format="reference" />
+        <attr name="item_rightTextColor" format="color|reference" />
+    </declare-styleable>
+</resources>
